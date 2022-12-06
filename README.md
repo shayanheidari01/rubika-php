@@ -15,3 +15,5 @@ print_r($test);
 ?>
 
 ```
+
+**Other examples:**
