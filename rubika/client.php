@@ -70,7 +70,7 @@ class Client {
 
     public function responseParser(string $response) {
         $response = json_decode($response, true);
-        return json_decode($this->decrypt($response["data_enc"]), true);
+        return json_decode($this -> decrypt($response["data_enc"]), true);
     }
 
     public function makeMethods($data, string $method) {
@@ -104,6 +104,11 @@ class Client {
             "reply_to_message_id" => $reply_to_message_id
         ];
         return $this -> request("sendMessage", $data);
+    }
+
+    public function getChatsUpdates() {
+        $chats = $this -> request('getChatsUpdates', ['state' => time() - 200]);
+        return $chats["chats"];
     }
 }
 
