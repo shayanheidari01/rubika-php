@@ -17,7 +17,7 @@ print_r($test);
 ```
 
 **Other examples:**
-  https://github.com/shayanheidari01/rubika-php/tree/main/examples
+- https://github.com/shayanheidari01/rubika-php/tree/main/examples
 
 
 **Thanks From:**
